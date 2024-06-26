@@ -1,0 +1,13 @@
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.nav-list{
+    gap: 2rem;
+}
+.nav-item a{
+    text-decoration: none;
+}
+.nav-item {
+    list-style: none;
+}
