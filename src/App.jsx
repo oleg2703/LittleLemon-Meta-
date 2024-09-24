@@ -1,17 +1,24 @@
-import React from 'react'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Main from './components/Main'
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Reservations from './pages/Reservations';
+import OrderOnline from './pages/OrderOnline';
+import Login from './pages/Login';
+import Nopage from './pages/Nopage';
 
 function App() {
   return (
-    <>
-      <Header/>
-      <Main/>
-      <Footer/>
-    </>
-  )
+    <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/reservations" element={<Reservations />} />
+          <Route path="/order" element={<OrderOnline />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="*" element={<Nopage />}/> 
+        </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
