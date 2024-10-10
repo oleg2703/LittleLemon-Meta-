@@ -5,7 +5,7 @@ import Reservations from './pages/Reservations';
 import OrderOnline from './pages/OrderOnline';
 import Login from './pages/Login';
 import Nopage from './pages/Nopage';
-
+import React from 'react';
 function App() {
   return (
     <Router>
