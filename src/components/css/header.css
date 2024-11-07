@@ -1,6 +1,9 @@
 header{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 3em;
+    
+    background: #000;
 }
 .nav-list{
     display: flex;

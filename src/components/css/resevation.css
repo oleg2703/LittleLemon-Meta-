@@ -1,0 +1,57 @@
+.reservation {
+    color: white;
+    background: #495e57;
+    display: flex;
+    margin-top: 32px;
+    font-size: 18px;
+}
+.reservation_content {
+    color: white;
+    background: #495e57;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 52px;
+   
+}
+
+.reserv_title {
+    max-width: 350px;
+    font-family: 'Markazi Text', serif;
+}
+.text__reserv{
+    padding: 10px 0 10px;
+
+}
+.btn-reservation{
+    display:block;
+    background-color: #f4ce14;
+    padding: 10px 20px;
+    margin:2em ;
+    
+    cursor: pointer;
+    text-align: center;
+    border-top:none ;
+    border-bottom: none;
+    border-radius: 2em;
+    font-family: 'Markazi Text', serif;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #000;
+}
+.food{
+    height: 400px; 
+   
+}
+.img_reservation{
+    
+    max-width: 420px;
+    max-height: 440px;
+    border-radius: 25px;
+}
+.name_restoran {
+    font-family: 'Markazi Text', serif;
+    color: #f4ce14;
+    font-size: 4.3em;
+}

@@ -1,13 +1,68 @@
-footer{
+
+  footer {
+
+    padding: 20px;
+    background: #f9f9f9;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.nav-list{
-    gap: 2rem;
-}
-.nav-item a{
-    text-decoration: none;
-}
-.nav-item {
+    place-content: center;
+    grid-template-areas:
+      "logo socials"
+      "links links";
+    grid-template-columns: repeat(1, 1fr);
+    color: #000;
+  }
+  
+  .logo {
+    grid-area: logo;
+  }
+  
+  .links {
+    grid-area: links;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 0 50px;
+  }
+  
+  .links h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+  }
+  
+  .links ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+  }
+  ul a {
+     text-decoration: none;
+     color:#000
+
+  }
+  
+  .links address {
+    font-style: normal;
+    line-height: 1.5;
+    font-size: 12px;
+  }
+  
+  @media (width < 500px) {
+    .links {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px 0;
+      padding: 40px 0 30px;
+    }
+  }
+  
+  @media (width < 360px) {
+    footer {
+      grid-template-areas: "logo" "links" ;
+      grid-template-columns: 1fr;
+    }
+  
+    
+  }

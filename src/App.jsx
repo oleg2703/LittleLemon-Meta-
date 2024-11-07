@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import  './App.css'
 import About from './pages/About';
-import Reservations from './pages/Reservations';
+import Reservations from './pages/Specials';
 import OrderOnline from './pages/OrderOnline';
 import Login from './pages/Login';
 import Nopage from './pages/Nopage';
@@ -18,6 +19,7 @@ function App() {
           <Route path="*" element={<Nopage />}/> 
         </Routes>
     </Router>
+    
   );
 }
 

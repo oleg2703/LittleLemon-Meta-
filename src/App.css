@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.notfound {
+    font-size: 52px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center; /* Centers content along the main axis (vertical in column layout) */
+    align-items: center; /* Centers content along the cross axis (horizontal in column layout) */
+    text-align: center;
+    width: 100%;
+    height: 100vh; /* Makes sure it takes the full viewport height */
+}
