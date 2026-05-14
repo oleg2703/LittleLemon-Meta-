@@ -1,22 +1,18 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import  './App.css'
-import About from './pages/About';
-import Reservations from './pages/Specials';
-import OrderOnline from './pages/OrderOnline';
-import Login from './pages/Login';
-import Nopage from './pages/Nopage';
+import ErrorPage from './pages/Error';
+import Reservation from './components/reservation';
+import ConfirmPage from './pages/Confirm';
 import React from 'react';
 function App() {
   return (
     <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/reservations" element={<Reservations />} />
-          <Route path="/order" element={<OrderOnline />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="*" element={<Nopage />}/> 
+          <Route path="/reservation" element={<Reservation />} />
+          <Route path="*" element={<ErrorPage />}/> 
+          <Route path="/confirm" element={<ConfirmPage />}/>
         </Routes>
     </Router>
     

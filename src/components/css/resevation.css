@@ -2,56 +2,198 @@
     color: white;
     background: #495e57;
     display: flex;
-    margin-top: 32px;
     font-size: 18px;
 }
 .reservation_content {
     color: white;
     background: #495e57;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 90%;
     margin: 0 auto;
-    padding-top: 52px;
-   
+    padding-top: 20px;
+    margin-top: 10vh;
 }
 
 .reserv_title {
-    max-width: 350px;
+    max-width: 300px;
     font-family: 'Markazi Text', serif;
+    text-align: start;
+    margin-top: 30px;
 }
 .text__reserv{
-    padding: 10px 0 10px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    color:#D6DAD8;
+    line-height: 1.5;
 
 }
 .btn-reservation{
-    display:block;
     background-color: #f4ce14;
-    padding: 10px 20px;
-    margin:2em ;
-    
+    padding: 10px 35px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.25);
     cursor: pointer;
     text-align: center;
-    border-top:none ;
-    border-bottom: none;
-    border-radius: 2em;
+    border: none;
+    border-radius: 15px;
     font-family: 'Markazi Text', serif;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #000;
+    font-weight: 400;
+    margin-top: 2em;
+}
+.btn-reservation:hover {
+    background-color: #f7dc57;
 }
 .food{
-    height: 400px; 
+    height: 400px;
+    margin-right:7%;
    
 }
-.img_reservation{
+@keyframes slideInFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px); /* Start slightly above the viewport */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End in its normal position */
+    }
+  }
+.img_reservation {
     
-    max-width: 420px;
-    max-height: 440px;
-    border-radius: 25px;
+    width: 120%;
+    height: 110%;
+    margin: 1em;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0; /* Start hidden */
+    animation: slideInFromTop 1.4s ease-out forwards; /* Apply animation */
+    animation-delay: 0.5s; /* Optional: add a delay if needed */
 }
 .name_restoran {
     font-family: 'Markazi Text', serif;
     color: #f4ce14;
-    font-size: 4.3em;
+    font-size: 3.5em;
+ 
+}
+.name_restoran +h3 {
+    font-size: 1.6em;
+    font-weight: 500;
+    position: relative;
+    bottom: 1.5rem;
+}
+
+/* Resrvation form */
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    color: #495e57;
+    font-family: Karla, sans-serif;
+   align-items: center;
+   background:#495e57;
+   height: 100vh;
+}
+.booking-form a {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    
+}
+.title_heading{
+    font-family: 'Markazi Text', serif;
+    font-size: 2.5em;
+    color: #f4ce14;
+text-align: center;
+}
+.title_heading>h2{
+    font-family: 'Markazi Text', serif;
+    font-size: 1.5rem;
+    color: #fff;
+    position: relative;
+    bottom: 10px;
+}
+.title_heading + h3 {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.form-container {
+    background:#fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 500px;
+    padding: 1.5rem 1rem;
+    box-shadow: 4px 5px 6px rgba(0, 0, 0, .25);
+    border-radius: 1.5rem;
+    border: 1px solid #495e57;
+}
+.form-container label {
+    font-weight: 500;
+    
+}
+.date-customer {
+    display: flex;
+    gap:5%;
+}
+.date-customer input{
+   width: 90%;
+   margin-top: 10px;
+    
+}
+.form-container input,
+.form-container select {
+    color:#495e57;
+    font-size: 17px;
+    outline: none;
+    padding: 12px;
+    border: 1px solid rgba(73, 94, 87, .5);
+    border-radius: 6px;
+}
+.required{
+    color: #ff4d4f;
+    
+  font-weight: bold;
+}
+
+/* Custom select styling */
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url("../../assets/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+ transition: transform 0.3s ease;
+  pointer-events: none;
+}
+.select-wrapper:focus-within::after {
+  transform:
+    translateY(-50%)
+    rotate(90deg);
+}
+select {
+  appearance: none;
+  width: 100%;
+  padding-right: 40px;
+}
+/*responsive*/
+@media (max-width: 700px) {
+.reservation_container{
+  padding: 10px;
+  background-color: #495e57;
+}
+
 }

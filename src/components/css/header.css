@@ -1,17 +1,148 @@
-header{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 3em;
-    
-    background: #000;
+.nav-item a {
+    text-decoration: none;
+    position: relative; 
+    color: white;
+    bottom: 0;
 }
+.logo{
+    display: block;
+    margin-left: 10px;
+    
+}
+    
+.nav {
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+  
+} 
+header{
+    position: fixed;
+    top: 0;
+    background:#fff;
+    width: 100%;
+    z-index: 1000;
+    padding:1em 0em 1em;
+    transition: transform 0.3s ease;
+    
+
+}
+header.hide {
+    transform: translateY(-100%);
+}
+
+header.show {
+    transform: translateY(0);
+}
+
+
+.nav-item a::after {
+    content: ""; 
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #F4CE14;
+    bottom: -2px; 
+    left: 0;
+    transition: width 0.3s ease; 
+}
+
+.nav-item a:hover::after {
+    width: 100%; 
+}
+
+
+
+
 .nav-list{
     display: flex;
     gap: 2rem;
+   
+    
 }
 .nav-item a{
+    color: #000;
+    font-family: Karla, sans-serif;
+    font-weight: 800;
+    list-style: none;
     text-decoration: none;
+    text-align: center;
 }
 .nav-item {
     list-style: none;
+   
+}
+/*hamburger menu*/
+.burger {
+ display: none;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.burger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: black;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.burger span:nth-child(1) {
+  top: 8px;
+}
+
+.burger span:nth-child(2) {
+  top: 18px;
+}
+
+.burger span:nth-child(3) {
+  top: 28px;
+}
+.burger.active span:nth-child(1) {
+  transform: rotate(45deg);
+
+  top: 18px;
+}
+.burger.active span:nth-child(2) {
+  opacity: 0;
+}
+.burger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+
+  top: 18px;
+}
+
+@media (max-width: 850px) {
+
+  .burger {
+    display: block; 
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+
+  .nav-list {
+
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 200px;
+    height: 100vh;
+    border-radius: 5px;
+    background: white;
+    flex-direction: column;
+    padding: 2rem;
+    transition: right 0.3s ease;
+  }
+
+  .nav-list.active {
+    right: 0;
+  }
+
 }

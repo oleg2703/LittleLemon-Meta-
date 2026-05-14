@@ -9,12 +9,15 @@
     display: flex;
     justify-content: center;
     padding-bottom: 2em;
+
   }
+  
   
   .testimonials_cards {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .h1-testimonials{
     font-size: 42px;
@@ -32,6 +35,11 @@
     width: 200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease;
+  }
+    .testimonial_card:hover {
+    transform: scale(1.07);
+    
   }
   
   /* Profile picture placeholder */
@@ -46,6 +54,13 @@
     font-size: 1.5em;
     color: #666;
     margin: 0 auto 30px;
+    
+  }
+  .profile_pic_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
   }
   
   /* Default full star rating */
@@ -62,9 +77,6 @@
     letter-spacing: 2px;
   }
   
-  /* Target first and fourth testimonial cards to apply 4.5 stars */
-  .testimonials_cards .testimonial_card:nth-child(1) .rating::before,
-  .testimonials_cards .testimonial_card:nth-child(4) .rating::before {
-    content: "\2605\2605\2605\2605\2606"; /* 4 full stars and 1 half star */
-  }
+
+  /*responsive*/
   

@@ -1,26 +1,4 @@
-header{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 3em;
-    margin-top: 1em;
-    font-family: serif;
-    font-size: 700;
-    background: #fff;
-}
-.nav-list{
-    display: flex;
-    gap: 2rem;
-}
-.nav-item a{
-    color: #000;
-    font-family: Karla, sans-serif;
-    font-weight: 800;
-    list-style: none;
-    text-decoration: none;
-}
-.nav-item {
-    list-style: none;
-}
+
 
 .product{
     padding-top: 5em;
@@ -41,7 +19,7 @@ header{
     width: 90%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between; /* Keeps space between the content and the images */
+    justify-content: space-between;
     padding: 2em 0 2em;
     font-size: 18px;
     font-family: Markazi Text,serif;
@@ -54,35 +32,90 @@ header{
    padding-right: 2em;
   }
 .name{
-       padding: 10px 0 10px;
-       font-size: 3em;
+        font-size: 64px;
+        font-family: Markazi Text,serif;
+       color: #495e57;
     }
-    .about__text{
-        padding-top: 10px;
-        line-height: 1.7em;
-        font-family:Karla, serif;
+    .name + h2{
+        font-size: 48px;
+        font-family: Markazi Text,serif;
+    color:#EFB196 ;
+    position: relative;
+    bottom: 1.5rem;
+    }
+
+
+
+  .about__text{
+      padding-top: 10px;
+      line-height: 1.7em;
+      font-family:Karla, serif;
+      color: #737373;
     }
   .about-img {
     display: grid;
     grid-template-columns: repeat(12, 1fr); 
     position: relative; 
   }
-  .about-img > img {
+  .about-img >img {
     width: 100%; 
     object-fit: cover; 
+    height: 300px;
+   border-radius: 15px;
+ 
   }
   
   .img-first {
     grid-column: 1 / span 6; 
     grid-row: 1; 
     z-index: 1; 
-    padding-top: 20%; 
+    margin-top: 20%; 
+     transition: transform 0.3s ease;
+  }
+  .img-first:hover{
+    transform: scale(1.2); 
+  }
+   .img-second:hover{
+    transform: scale(1.2); 
   }
   
   .img-second {
     grid-column: 6 / -1; 
     grid-row: 1; 
     z-index: 0; 
-    transform: scale(1.1); 
+    transform: scale(1.1);
+     transition: transform 0.3s ease;
   }
-  
+  /*responsive*/
+  @media (max-width: 850px) {
+    .about_content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .about__section {
+      max-width: 100%;
+      padding-right: 0;
+    }
+    .about-img {
+      grid-template-columns: 1fr; 
+    }
+    .img-first, .img-second {
+      grid-column: 1; 
+      grid-row: auto; 
+      margin-top: 0; 
+    }
+    .product-content{
+    
+    display:flex ;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    gap:20 ;
+} 
+.img_reservation {
+  display: none;
+}
+.reservation_content{
+  width: 100%;
+ 
+}
+  }

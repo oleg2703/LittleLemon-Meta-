@@ -14,3 +14,6 @@
     width: 100%;
     height: 100vh; /* Makes sure it takes the full viewport height */
 }
+html {
+  scroll-behavior: smooth;
+}
