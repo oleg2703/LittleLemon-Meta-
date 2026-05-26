@@ -58,3 +58,18 @@ npm install
 ```bash
 npm run dev
 ```
+
+## 🌍 Live Demo
+https://little-lemon-meta-26hr.vercel.app
+
+## 🚀 Deployment
+
+This project is deployed on Vercel.
+
+## 🔮 Future Improvements
+
+- Authentication
+- Real backend integration
+- Admin dashboard
+- Online payments
+- Reservation database
