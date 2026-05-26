@@ -1,4 +1,4 @@
-import Header from "../components/header";
+import Header from "../components/Header.jsx";
 import React from "react";
 import Card from '../components/card'
 import Reservations from "./Specials";
