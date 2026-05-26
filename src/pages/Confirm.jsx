@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import React from "react";
-import logo from '../assets/logo.svg';
+import Logo from '../assets/Logo.svg';
 import restaurant from '../assets/restaurant.jpg';
 import '../components/css/confirm.css';
 function ConfirmPage() {
@@ -12,7 +12,7 @@ function ConfirmPage() {
   return (
     <div className="confirm_wrapper">
         <div className="header_confirm">
-            <img src={logo} alt="logo" className="logo-confirm" />
+            <img src={Logo} alt="logo" className="logo-confirm" />
             <img src={restaurant} alt="Restaurant" />
         </div>
         <div className="confirm-container">
