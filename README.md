@@ -1,8 +1,60 @@
-# React + Vite
+# 🍋 Little Lemon Restaurant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Little Lemon is a modern responsive restaurant website built with React and Vite as part of the Meta Front-End Developer project.
 
-Currently, two official plugins are available:
+The application includes:
+- Responsive navigation
+- Animated burger menu
+- Table reservation form
+- Reservation confirmation page
+- Smooth scrolling navigation
+- Interactive UI animations
+- Mobile-friendly design
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## 🚀 Technologies Used
+
+- React
+- Vite
+- React Router DOM
+- CSS3
+- JavaScript (ES6+)
+
+---
+
+## 📸 Features
+
+### ✅ Responsive Design
+The website is fully responsive and optimized for:
+- Desktop
+- Tablet
+- Mobile devices
+
+### ✅ Animated Navigation
+- Sticky navbar
+- Hide/show navbar on scroll
+- Animated burger menu
+- Smooth anchor scrolling
+
+### ✅ Reservation System
+Users can:
+- Fill reservation form
+- Submit booking data
+- Navigate to confirmation page
+- See entered reservation details
+
+
+
+
+### ⚙️ Installation
+git clone https://github.com/oleg2703/LittleLemon-Meta.git
+
+## Install
+```bash
+npm install 
+```
+## Start 
+```bash
+npm run dev
+```
