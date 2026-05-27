@@ -73,10 +73,10 @@
      transition: transform 0.3s ease;
   }
   .img-first:hover{
-    transform: scale(1.2); 
+    transform: scale(1.1); 
   }
    .img-second:hover{
-    transform: scale(1.2); 
+    transform: scale(1.1); 
   }
   
   .img-second {
@@ -99,10 +99,13 @@
     .about-img {
       grid-template-columns: 1fr; 
     }
-    .img-first, .img-second {
+    .img-first {
       grid-column: 1; 
       grid-row: auto; 
-      margin-top: 0; 
+      margin-top: 10px; 
+    }
+    .img-second{
+      display: none;
     }
     .product-content{
     

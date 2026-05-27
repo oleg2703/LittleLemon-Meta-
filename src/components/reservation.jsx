@@ -13,7 +13,7 @@ export default function reservation() {
     occasion: ''
   });
   const navigate = useNavigate();
-
+  const today = new Date().toISOString().split("T")[0];
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -40,14 +40,16 @@ export default function reservation() {
         <form className='form-container' aria-label='On Submit' onSubmit={handleSubmit}>
           <div className="date-customer">
             <label htmlFor="first_name">First Name <span className="required">*</span>
-            <input type="text" placeholder='First Name' name='first_name'
+            <input type="text" placeholder='First Name'  name='first_name'
              value={formData.first_name}
+             maxLength={'30'}
           onChange={handleChange}
              required />
             </label>
             <label htmlFor="last_name">Last Name <span className="required">*</span>
             <input type="text" placeholder='Last Name' name='last_name'
              value={formData.last_name}
+             maxLength={'30'}
           onChange={handleChange}
              required />
             </label>
@@ -58,7 +60,8 @@ export default function reservation() {
             <input type="date"  name='date' 
               value={formData.date}
           onChange={handleChange}
-            required />
+          min={today}
+            required  />
             <label htmlFor="time">Time 
               <span className="required">*</span>
             </label>
