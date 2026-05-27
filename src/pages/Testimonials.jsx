@@ -14,25 +14,25 @@ export default function Testimonials() {
           <div className="testimonial_card">
             <div className="profile_pic"><img src={women_2} alt="SG"  className='profile_pic_img'/></div>
              <div className="rating"></div>
-            <h3>Selena G.</h3>
+            <p>Selena G.</p>
             <blockquote>"The food was amazing, the service was excellent and the atmosphere was perfect for a romantic dinner."</blockquote>
           </div>
           <div className="testimonial_card">
             <div className="profile_pic"><img src={men_2} alt="BM"  className='profile_pic_img'/></div>
             <div className="rating"></div>
-            <h3>Brandon M.</h3>
+            <p>Brandon M.</p>
             <blockquote>"The Lemon Dessert was excellent!"</blockquote>
           </div>
           <div className="testimonial_card">
             <div className="profile_pic"><img src={men_1} alt="PR"  className='profile_pic_img'/></div>
             <div className="rating"></div>
-            <h3>Peter R.</h3>
+            <p>Peter R.</p>
             <blockquote>"You have to try the Greek Salad!"</blockquote>
           </div>
           <div className="testimonial_card">
             <div className="profile_pic"><img src={women_1} alt="NJ"  className='profile_pic_img'/></div>
             <div className="rating"></div>
-            <h3>Neha J.</h3>
+            <p>Neha J.</p>
             <blockquote>"Awesome place, peaceful atmosphere with delicious food."</blockquote>
           </div>
         </div>

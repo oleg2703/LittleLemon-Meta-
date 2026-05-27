@@ -75,7 +75,7 @@ header.show {
    
 }
 /*hamburger menu*/
-.burger {
+.btn-burger {
  display: none;
   width: 40px;
   height: 40px;
@@ -84,7 +84,7 @@ header.show {
   border: none;
   cursor: pointer;
 }
-.burger span {
+.btn-burger span {
   position: absolute;
   left: 0;
   width: 100%;
@@ -93,26 +93,26 @@ header.show {
   border-radius: 4px;
   transition: all 0.3s ease;
 }
-.burger span:nth-child(1) {
+.btn-burger span:nth-child(1) {
   top: 8px;
 }
 
-.burger span:nth-child(2) {
+.btn-burger span:nth-child(2) {
   top: 18px;
 }
 
-.burger span:nth-child(3) {
+.btn-burger span:nth-child(3) {
   top: 28px;
 }
-.burger.active span:nth-child(1) {
+.btn-burger.active span:nth-child(1) {
   transform: rotate(45deg);
 
   top: 18px;
 }
-.burger.active span:nth-child(2) {
+.btn-burger.active span:nth-child(2) {
   opacity: 0;
 }
-.burger.active span:nth-child(3) {
+.btn-burger.active span:nth-child(3) {
   transform: rotate(-45deg);
 
   top: 18px;
@@ -120,7 +120,7 @@ header.show {
 
 @media (max-width: 850px) {
 
-  .burger {
+ .btn-burger {
     display: block; 
     margin-left: auto;
     margin-right: 20px;

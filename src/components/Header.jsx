@@ -37,8 +37,9 @@ function Header() {
         <nav className="nav ">
         <a href="/"><img src={Logo} alt="logo" className="logo" /></a>
           <button 
-            className={open ? "burger active" : "burger"}
-            onClick={() => setOpen(!open)}
+            className={open ? "btn-burger active" : "btn-burger"}
+            onClick={() => setOpen(!open)} 
+            name='menu' 
           >
              <span></span>
             <span></span>
