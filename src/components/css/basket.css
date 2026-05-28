@@ -1,0 +1,182 @@
+.basket-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+  z-index: 1000;
+}
+
+.basket-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.basket-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  width: 700px;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 24px;
+  padding: 32px;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s ease;
+
+  z-index: 1001;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.basket-wrapper.open {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.btn-close {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-left: auto;
+  margin-bottom: 24px;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #333;
+
+  transition: 0.2s ease;
+}
+
+.btn-close:hover {
+  color: #f4ce14;
+}
+
+.basket-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.basket-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.basket-title{
+  font-size: 1.5em;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  text-align: center;
+  color:#495e57
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #f9f9f9;
+  transition: 0.2s ease;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+}
+
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.item-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.item-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+.item-price {
+  color: #495e57;
+  font-weight: 600;
+}
+
+.item-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-count {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  background: #495e57;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin:0 10px;
+}
+
+.btn-count:hover {
+  background: #f4ce14;
+  color: #333;
+}
+
+.item-quantity {
+  min-width: 24px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.basket-price {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  border-top: 2px solid #eee;
+}
+
+.total-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.total-price {
+  font-size: 28px;
+  font-weight: 800;
+  color: #495e57;
+}
