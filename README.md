@@ -2,7 +2,7 @@
 
 Little Lemon is a modern responsive restaurant website built with React and Vite as part of the Meta Front-End Developer project.
 <p align="center">
-  <img src="./README-assets/demo.gif" width="800" />
+  <img src="./README-assets/demo.png" width="800" />
 </p>
 The application includes:
 - Responsive navigation
