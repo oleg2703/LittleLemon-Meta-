@@ -20,7 +20,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.9);
-  width: 700px;
+  width: 90%;
   max-height: 85vh;
   overflow-y: auto;
   background: #fff;
@@ -152,7 +152,22 @@
   background: #f4ce14;
   color: #333;
 }
+.btn-confirm{
+  background: #495e57;
+  color: #f9f9f9;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
 
+}
+.btn-confirm:hover{
+  background: #5b8275;
+ 
+}
 .item-quantity {
   min-width: 24px;
   text-align: center;
@@ -167,6 +182,8 @@
   align-items: center;
   padding-top: 24px;
   border-top: 2px solid #eee;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 .total-text {
@@ -180,3 +197,16 @@
   font-weight: 800;
   color: #495e57;
 }
+ @media (max-width: 850px) {
+ .basket-wrapper {
+  padding: 10px;
+ }
+ 
+.item {
+  
+  gap: 5px;
+  padding:10px;
+  
+  
+}
+  }

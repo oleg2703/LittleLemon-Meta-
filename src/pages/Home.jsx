@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 import About from "./About";
 import Testimonials from './Testimonials'
 import OrderOnline from './OrderOnline'
+import Modal from "../components/Modal.jsx";
 function Home() {
     const products = [
   {
@@ -65,6 +66,7 @@ function Home() {
         <Testimonials/>
         <About/>
         </div>
+        <Modal />
         <Footer/>
         </>
     )

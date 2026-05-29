@@ -2,7 +2,8 @@
 import {
   createContext,
   useContext,
-  useState
+  useState,
+  useRef
 } from "react";
 
 const AppContext = createContext();
@@ -16,6 +17,28 @@ export function AppProvider({ children }) {
     useState(false);
     const [basketItems, setBasketItems] =
     useState([]);
+
+  const [isModalOpen, setIsModalOpen] =
+    useState(false)
+
+  const [modalMessage, setModalMessage] =
+    useState('')
+
+  const timerRef = useRef(null)
+
+  const showModal = (message) => {
+
+    setModalMessage(message)
+
+    setIsModalOpen(true)
+
+    clearTimeout(timerRef.current)
+
+    timerRef.current = setTimeout(() => {
+      setIsModalOpen(false)
+    }, 3000)
+  }
+      
         const addToBasket = (product) => {
 
     setBasketItems((prev) => {
@@ -103,7 +126,7 @@ const clearBasket = () => {
 
     // eslint-disable-next-line react/react-in-jsx-scope
     <AppContext.Provider value={{basketOpen,setBasketOpen,menuOpen,setMenuOpen,basketItems,
-        addToBasket,removeFromBasket,increaseQuantity,decreaseQuantity,clearBasket,totalPrice }}>
+        addToBasket,removeFromBasket,increaseQuantity,decreaseQuantity,clearBasket,totalPrice,isModalOpen,showModal,modalMessage}}>
       {children}
     </AppContext.Provider>
   );

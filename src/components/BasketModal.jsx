@@ -57,6 +57,7 @@ export default function Basket({ isOpen ,onClose}) {
                   <span>
                   Total: ${totalPrice.toFixed(2)}
                 </span>
+                <button type='button' className='btn-confirm'>Payment</button>
             </div>
           </div>
         </div>

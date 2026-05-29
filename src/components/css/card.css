@@ -60,19 +60,25 @@
 }
 
 .btn-delivery{
+    width: 100%;
     font-family: Karla,serif;
     text-decoration: none;
     display: block;
+    box-sizing: border-box;
     color: #495E57;
     font-size: 18px;
     font-weight: 600;
     margin-top: 1.5em;
    position: relative;
+   outline: none;
+   border: none;
+   cursor: pointer;
+   text-align: left;
 }
 .btn-delivery>span{
 position: absolute;   
-  bottom: -3px;
-  right: 0;
+ bottom: 0;
+right: 0;
 
 }
 .card__price{
