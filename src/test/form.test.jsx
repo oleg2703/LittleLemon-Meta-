@@ -2,7 +2,7 @@ import React from 'react';
 import { describe, test, expect, vi, beforeEach } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom'; 
-import Reservation from '../components/reservation.jsx'; 
+import Reservation from '../components/Reservation.jsx'; 
 
 describe('Компонент Reservation — Тестування валідації форми (Vitest)', () => {
   const mockDispatch = vi.fn();

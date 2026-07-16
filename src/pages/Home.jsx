@@ -44,10 +44,9 @@ function Home() {
         <>
         <div className='wrapper'>
         <Header/>
-            <div className="content">
-        
-        <Specials/>
-        <OrderOnline/>
+        <div className="content">
+         <Specials/>
+          <OrderOnline/>
             <div className="product">
                 <div className="product-content">
                     {products.map((product) => (
@@ -60,11 +59,11 @@ function Home() {
                         description={product.description}
                         />
                     ))}
+                 </div>
                 </div>
-            </div>
-        </div>
-        <Testimonials/>
-        <About/>
+             </div>
+            <Testimonials/>
+            <About/>
         </div>
         <Modal />
         <Footer/>
