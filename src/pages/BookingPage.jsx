@@ -1,6 +1,6 @@
 /* eslint-disable react/react-in-jsx-scope */
 import { useReducer } from "react";
-import Reservation from "../components/Reservation";
+import Reservation from "../components/Reservation.jsx";
 import { fetchAPI, submitAPI } from "../api/api";
 import { useNavigate } from "react-router-dom";
 
