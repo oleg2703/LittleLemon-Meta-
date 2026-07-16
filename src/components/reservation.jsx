@@ -32,7 +32,11 @@ const handleChange = (e) => {
 
 const handleSubmit = (e) => {
     e.preventDefault();
-    submitForm(formData);
+    if (!e.target.checkValidity()) {
+    return;
+  }
+  
+  submitForm(formData);
 };
   return (
    
@@ -73,13 +77,19 @@ const handleSubmit = (e) => {
               <span className="required">*</span>
             </label>
               <div className="select-wrapper">
-                 <select name="time" id="time-select" value={formData.time} onChange={handleChange}  required >
-                    <option value="">--Please select a time--</option>
-                   {availableTimes?.map((time) => (
-                      <option key={time} value={time}>
-                        {time}
-                      </option>
-                    ))}
+                 <select name="time" id="time" value={formData.time} onChange={handleChange} required>
+                    {availableTimes.length === 0 ? (
+                      <option value="">No available times</option>
+                    ) : (
+                      <>
+                        <option value="">--Please select a time--</option>
+                        {availableTimes.map((time) => (
+                          <option key={time} value={time}>
+                            {time}
+                          </option>
+                        ))}
+                      </>
+                    )}
                   </select>
               </div>
            

@@ -27,10 +27,13 @@ export default function BookingPage() {
   const navigate = useNavigate();
 
   const submitForm = (formData) => {
+  
     const success = submitAPI(formData);
-
     if (success) {
+      localStorage.setItem('lastBooking', JSON.stringify(formData));
       navigate("/confirm");
+    } else {
+      alert("Something went wrong with your reservation. Please try again.");
     }
   };
 
