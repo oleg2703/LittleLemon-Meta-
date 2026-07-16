@@ -1,7 +1,6 @@
 import Header from "../components/Header.jsx";
 import React from "react";
 import ProductCard from '../components/ProductCard.jsx'
-import Reservations from "./Specials";
 import Brushetta from '../assets/bruchetta.svg'
 import GreenSalad from '../assets/greek salad.jpg'
 import  LemonDessert from '../assets/lemon dessert.jpg'
@@ -11,6 +10,7 @@ import About from "./About";
 import Testimonials from './Testimonials'
 import OrderOnline from './OrderOnline'
 import Modal from "../components/Modal.jsx";
+import Specials from "../pages/Specials.jsx";
 function Home() {
     const products = [
   {
@@ -46,7 +46,7 @@ function Home() {
         <Header/>
             <div className="content">
         
-        <Reservations/>
+        <Specials/>
         <OrderOnline/>
             <div className="product">
                 <div className="product-content">
