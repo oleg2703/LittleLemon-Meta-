@@ -42,6 +42,7 @@
     color: #000;
     font-weight: 400;
     margin-top: 2em;
+   
 }
 .btn-reservation:hover {
     background-color: #f7dc57;
@@ -93,11 +94,14 @@
     font-family: Karla, sans-serif;
    align-items: center;
    background:#495e57;
+   margin-top: 2em;
+    border-bottom: 4px solid #bab8b8;
+    padding-bottom: 2em;
   
 }
 .booking-form a {
     position: absolute;
-    top: 20px;
+    top: 100px;
     left: 20px;
     
 }

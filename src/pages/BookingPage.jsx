@@ -3,6 +3,8 @@ import { useReducer } from "react";
 import Reservation from "../components/Reservation.jsx";
 import { fetchAPI, submitAPI } from "../api/api";
 import { useNavigate } from "react-router-dom";
+import Footer from "../components/Footer.jsx";
+import Header from "../components/Header.jsx";
 
 export const initializeTimes = () => {
   return fetchAPI(new Date());
@@ -39,7 +41,9 @@ export default function BookingPage() {
 
   return (
     <>
+      <Header/>
       <Reservation availableTimes={availableTimes} dispatch={dispatch} submitForm={submitForm} />
+      <Footer/>
     </>
   );
 }
