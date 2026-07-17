@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
-import home  from '../assets/home icon.svg'
+
 import { useState } from "react";
 
 export default function Reservation({  availableTimes = [], dispatch, submitForm }) {
@@ -41,7 +41,7 @@ const handleSubmit = (e) => {
   return (
    
    <section name='reservation' className='booking-form'>
-    <a href="/"><img src={home} alt="Home" /></a>
+    
     <div className="reservation_container" >
         <h2 className='title_heading'>Little Lemon
           <p>Chicago</p>

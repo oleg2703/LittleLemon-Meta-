@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { HashLink } from 'react-router-hash-link';
 import Logo from '../assets/Logo.svg';
 import BasketImg from '../assets/basket .svg';
 import "./css/header.css";
@@ -50,7 +51,7 @@ function Header() {
           <img src={Logo} alt="logo" className="logo"/>
         </a>
 
-        {/* Basket */}
+      
        
 
         {/* Burger */}
@@ -68,15 +69,15 @@ function Header() {
            
             <ul className={menuOpen ? "nav-list active": "nav-list"}>
           <li className="nav-item">
-            <a href="#about" onClick={() =>setMenuOpen(false)}>About</a></li>
+            <HashLink to="/#about">About</HashLink></li>
           <li className="nav-item">
-            <a href="#menu" onClick={() =>setMenuOpen(false)}>Menu</a>
+            <HashLink to="/#menu">Menu</HashLink>
           </li>
           <li className="nav-item">
-            <a href="#Testimonials" onClick={() =>setMenuOpen(false)}>Testimonials</a>
+            <HashLink to="/#Testimonials">Testimonials</HashLink>
           </li>
           <li className="nav-item"> 
-            <a href="#contact"onClick={() =>setMenuOpen(false)}> Contact </a> 
+            <HashLink to="/#contact">Contact</HashLink>
           </li>
         </ul>
 

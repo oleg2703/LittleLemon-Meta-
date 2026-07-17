@@ -15,13 +15,13 @@
     margin-top: 10vh;
 }
 
-.reserv_title {
+.reservation_title {
     max-width: 300px;
     font-family: 'Markazi Text', serif;
     text-align: start;
-    margin-top: 30px;
+    margin-top: 3em ;
 }
-.text__reserv{
+.text__reservation{
     font-family: 'Karla', sans-serif;
     font-weight: 500;
     color:#D6DAD8;
@@ -73,20 +73,20 @@
     animation: slideInFromTop 1.4s ease-out forwards; /* Apply animation */
     animation-delay: 0.5s; /* Optional: add a delay if needed */
 }
-.name_restoran {
+.name_restaurant {
     font-family: 'Markazi Text', serif;
     color: #f4ce14;
     font-size: 3.5em;
  
 }
-.name_restoran +h3 {
+.name_restaurant  +h3 {
     font-size: 1.6em;
     font-weight: 500;
     position: relative;
     bottom: 1.5rem;
 }
 
-/* Resrvation form */
+/* Reservation form */
 .booking-form {
     display: flex;
     flex-direction: column;
@@ -99,17 +99,13 @@
     padding-bottom: 2em;
   
 }
-.booking-form a {
-    position: absolute;
-    top: 100px;
-    left: 20px;
-    
-}
+
 .title_heading{
     font-family: 'Markazi Text', serif;
     font-size: 2.5em;
     color: #f4ce14;
-text-align: center;
+    text-align: center;
+    margin-top: 1em;
 }
 .title_heading>h2{
     font-family: 'Markazi Text', serif;
